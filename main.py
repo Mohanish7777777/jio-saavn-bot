@@ -2,7 +2,7 @@ import requests
 import telebot
 import json
 
-TOKEN = 'YOUR_BOT_TOKEN'
+TOKEN = '5937674659:AAGAPxJ5u5DjVSpBNEOdmLKdmUpqf6k9ZyY'
 
 bot = telebot.TeleBot(TOKEN)
 
