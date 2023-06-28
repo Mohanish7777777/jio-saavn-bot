@@ -50,7 +50,7 @@ CONST_SONG_LINK = 'https://saavn.me/search/songs?query='
 @bot.message_handler(commands=['start', 'help'])
 def welcome_message(message):
     chat_id = message.chat.id
-    bot.send_message(chat_id, "Hi, I'm Alive!")
+    bot.send_message(chat_id, "Hi, I am MusicX Bot From\nMohanishX Services⚡\nAdmin @Mohanish7777777 ")
 
 # handeling /song
 
@@ -61,7 +61,7 @@ def song_request(request):
     request_text = request.text
     title_input = extract_string(request_text, "/song")
     song_title = f'{CONST_SONG_LINK}{title_input}' 
-    bot.send_message(chat_id, f"Getting {title_input}")
+    bot.send_message(chat_id, f"Finding 🔍 {title_input}\nPowered By MohanishX Services\nSupport Chat: https://t.me/xadmin_botz")
     
     try:
         title = song_fetcher(title_input)
